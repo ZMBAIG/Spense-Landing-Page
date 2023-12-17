@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  width: 100%;
+  background-color: rgb(232, 231, 230, 0.6);
+}
+.header_navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 2px solid #9b2915;
+}
+.header_navbar a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+
+.header_navbar a:hover {
+  border-bottom: 2px solid #9b2915;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  /* background-color: #cc9240; */
+  /* background-color: #a44200; */
+  background-color: #9b2915;
+}
+header input[type="email"] {
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+}
+.hamburger_menu {
+  display: none;
+}
+/* =================Share your unfiltered thoughts=========================== */
+.share_your_unfiltered {
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  padding: 0rem 4rem;
+  background-color: rgb(232, 231, 230, 0.6);
+  padding-bottom: 4rem;
+}
+.sub_share_your_unfiltered {
+  display: flex;
+  flex-direction: column;
+}
+.sub_share_your_unfiltered img {
+  max-width: 4%;
+}
+div p {
+  display: flex;
+  gap: 1rem;
+  /* border: 1px solid red; */
+  margin: 0.5rem 0rem;
+}
+.share_your_unfiltered .hero_image_desktop {
+  display: block;
+  width: 100%;
+  box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.75);
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
+.sub_share_your_unfiltered h2 {
+  font-size: 4rem;
+}
+
+.sub_share_your_unfiltered > p {
+  color: grey;
+  width: 90%;
+  padding: 2rem 0rem;
+}
+.sub_share_your_unfiltered input[type="email"] {
+  width: 25%;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+.sub_share_your_unfiltered form {
+  padding-top: 2rem;
+}
+
+/* =================Company logos=========================== */
+.company_logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.company_logos img {
+  width: 6%;
+  padding: 4px;
+  background-color: transparent;
+}
+
+/* =================Secure your money with Escrow.=========================== */
+
+.secure_your_money {
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  background-color: rgb(232, 231, 230, 0.6);
+  border-radius: 1rem;
+  width: 90%;
+  height: 100vh;
+  /* box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.75); */
+}
+.secure_your_money img {
+  display: block;
+  height: 85vh;
+  width: 100vw;
+  position: relative;
+  left: -45rem;
+  object-fit: fill;
+}
+.sub_secure_your_money {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sub_secure_your_money h3 {
+  font-size: 2rem;
+  width: 60%;
+}
+.sub_secure_your_money p {
+  color: grey;
+  padding: 1rem 0rem;
+  width: 90%;
+}
+.secure_your_money a {
+  color: black;
+}
+.sub_secure_your_money a:hover {
+  cursor: pointer;
+}
+
+/* =================A text editor like no other.=========================== */
+
+.create_amazing_content {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  width: 90%;
+  padding: 2rem;
+}
+.create_amazing_content img {
+  display: block;
+  width: 100%;
+}
+.sub_create_amazing_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sub_create_amazing_content h3 {
+  font-size: 2rem;
+}
+.sub_create_amazing_content p {
+  color: grey;
+  padding: 1rem 0rem;
+}
+.sub_create_amazing_content a {
+  color: black;
+}
+.quill_video {
+  text-align: center;
+  width: 80%;
+}
+.quill_video h3 {
+  align-self: center;
+}
+.quill_video p {
+  font-size: 0.75rem;
+  text-align: left;
+  width: 85%;
+  color: gray;
+}
+iframe {
+  padding-right: 5rem;
+  border-right: 5px solid rgb(60, 60, 60);
+  /* border: #a86a13 2px solid; */
+}
+
+/* =================Footer.=========================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  background-color: black;
+  color: grey;
+  padding: 2rem 4rem;
+}
+
+footer li {
+  list-style: none;
+}
+footer li a {
+  color: grey;
+  text-decoration: none;
+}
+footer .bold_text {
+  color: white;
+  font-size: 1rem;
+}
+.spense_text li:nth-child(2) {
+  width: 70%;
+  padding-top: 0.3rem;
+}
+.spense_text .logo {
+  color: white;
+}
+footer nav {
+  display: flex;
+  gap: 4rem;
+}
+footer nav ul li {
+  padding: 0.3rem 0rem;
+}
+footer nav ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+.resources li:nth-child(4) {
+  text-transform: uppercase;
+}
+/* =================Media Query for Responsive Design=========================== */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header .header_navbar,
+  form {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+
+  .share_your_unfiltered {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .share_your_unfiltered form {
+    display: block;
+  }
+  .sub_share_your_unfiltered h2 {
+    padding-top: 3rem;
+  }
+  .secure_your_money {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub_secure_your_money h3 {
+    width: 40%;
+  }
+  .secure_your_money img {
+    position: relative;
+    left: -12rem;
+    /* bottom: 12rem; */
+    height: 50vh;
+  }
+  .create_amazing_content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sub_create_amazing_content h3 {
+    width: 50%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+  }
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  header .header_navbar,
+  form {
+    display: block;
+  }
+  .hamburger_menu {
+    display: none;
+  }
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+}
