@@ -30,7 +30,7 @@ header {
 .header_navbar {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  margin: 2rem;
 }
 .header_navbar a {
   text-decoration: none;
@@ -133,14 +133,11 @@ div p {
   border-radius: 1rem;
   width: 90%;
   height: 100vh;
-  /* box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.75); */
 }
 .secure_your_money img {
   display: block;
-  height: 85vh;
-  width: 100vw;
   position: relative;
-  left: -45rem;
+  left: -40rem;
   object-fit: fill;
 }
 .sub_secure_your_money {
@@ -173,6 +170,8 @@ div p {
   grid-template-columns: 60% 1fr;
   width: 90%;
   padding: 2rem;
+  /* border: 1px solid red; */
+  margin: 4rem 0rem;
 }
 .create_amazing_content img {
   display: block;
@@ -207,7 +206,9 @@ div p {
   color: gray;
 }
 iframe {
-  /* padding-right: 5rem; */
+  /* width: 520px;
+  height: 345px; */
+  padding-right: 2rem;
   border-right: 5px solid rgb(60, 60, 60);
   /* border: #a86a13 2px solid; */
 }
@@ -215,11 +216,13 @@ iframe {
 /* =================Footer.=========================== */
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-size: 0.75rem;
   background-color: black;
   color: grey;
   padding: 2rem 4rem;
+  width: 100%;
 }
 
 footer li {
@@ -272,10 +275,11 @@ footer nav ul li a:hover {
   h2 {
     font-size: 3rem;
   }
-  .share_your_unfiltered form {
-    display: block;
+  .share_your_unfiltered form input[type="email"] {
+    width: 50%;
   }
   .sub_share_your_unfiltered h2 {
+    font-size: 2rem;
     padding-top: 3rem;
   }
   .secure_your_money {
@@ -287,13 +291,14 @@ footer nav ul li a:hover {
   }
   .secure_your_money img {
     position: relative;
-    left: -12rem;
+    right: -6rem;
     /* bottom: 12rem; */
-    height: 50vh;
+    /* height: 50vh; */
   }
   .create_amazing_content {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 12rem;
   }
   .sub_create_amazing_content h3 {
     width: 50%;
@@ -304,7 +309,6 @@ footer nav ul li a:hover {
     align-items: center;
     padding: 0 4rem;
     gap: 2rem;
-    /* height: 100vh; */
   }
 }
 /* For tablets: */
