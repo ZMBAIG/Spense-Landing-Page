@@ -11,7 +11,8 @@
 
 .banner {
   font-size: 1rem;
-  background-color: black;
+  font-weight: 200;
+  background-color: #1d1e30;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -46,7 +47,7 @@ header {
 }
 
 input[type="submit"] {
-  background-color: black;
+  background-color: #1d1e30;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -54,9 +55,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   cursor: pointer;
-  /* background-color: #cc9240; */
-  /* background-color: #a44200; */
-  background-color: #9b2915;
+  background-color: #a44200;
 }
 header input[type="email"] {
   width: 3rem;
@@ -233,7 +232,7 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
-  background-color: black;
+  background-color: #1d1e30;
   color: grey;
   padding: 2rem 4rem;
 }
@@ -274,14 +273,10 @@ footer .bold_text {
   color: white;
 }
 
-/* =================Media Query for Responsive Design=========================== */
+/* =================Media Query for Responsive Design==================== */
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-
-  /* * {
-    border: #9b2915 1px solid;
-  } */
 
   .banner {
     font-size: 1.01rem;
