@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1 class="banner">
+      🧨To celebrate Spense's launch, we will be waiving all fees for the entire
+      month of April.<span> You will be receiving 100% of the earnings.</span>
+      🧨
+    </h1>
     <header>
       <p class="logo">spense.</p>
       <nav class="header_navbar">
@@ -75,14 +80,21 @@
       </picture>
     </main>
     <section class="company_logos">
-      <img src="./Assets/Facebook Logo.png" alt="Facebook Logo" />
-      <img src="./Assets/Dribbble Logo.png" alt="Dribbble Logo" />
-      <img src="./Assets/Youtube Logo.png" alt="Youtube Logo" />
-      <img src="./Assets/Pinterest Logo.png" alt="Pinterest Logo" />
-      <img src="./Assets/Twitter Logo.png" alt="Twitter Logo" />
-      <img src="./Assets/Reddit Logo.png" alt="Reddit Logo" />
-      <img src="./Assets/Google Logo.png" alt="Google Logo" />
-      <img src="./Assets/Slack Logo.png" alt="Slack Logo" />
+      <div class="company_logos_mobile">
+        <img src="./Assets/Facebook Logo.png" alt="Facebook Logo" />
+        <img src="./Assets/Dribbble Logo.png" alt="Dribbble Logo" />
+        <img src="./Assets/Youtube Logo.png" alt="Youtube Logo" />
+      </div>
+      <div class="company_logos_desktop">
+        <img src="./Assets/Facebook Logo.png" alt="Facebook Logo" />
+        <img src="./Assets/Dribbble Logo.png" alt="Dribbble Logo" />
+        <img src="./Assets/Youtube Logo.png" alt="Youtube Logo" />
+        <img src="./Assets/Pinterest Logo.png" alt="Pinterest Logo" />
+        <img src="./Assets/Twitter Logo.png" alt="Twitter Logo" />
+        <img src="./Assets/Reddit Logo.png" alt="Reddit Logo" />
+        <img src="./Assets/Google Logo.png" alt="Google Logo" />
+        <img src="./Assets/Slack Logo.png" alt="Slack Logo" />
+      </div>
     </section>
     <section class="secure_your_money">
       <article class="sub_secure_your_money">
@@ -105,11 +117,13 @@
     <section class="create_amazing_content">
       <article class="quill_video">
         <img src="./Assets/Text Editor-Menu.png" alt="Text Editor-Menu" />
-        <h3>Create amazing content</h3>
-        <p>
-          Using Quill as our text editor, we pull you into focus mode to make
-          sure you create the best writings you can.
-        </p>
+        <div>
+          <h3>Create amazing content</h3>
+          <p>
+            Using Quill as our text editor, we pull you into focus mode to make
+            sure you create the best writings you can.
+          </p>
+        </div>
         <iframe
           title="Quill Text Editor"
           width="100%"
@@ -130,40 +144,34 @@
       </article>
     </section>
     <footer>
-      <ul class="spense_text">
-        <li class="logo">spense.</li>
-        <li>
+      <div class="spense_text">
+        <p class="logo">spense.</p>
+        <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quam
           aliquam veniam tenetur qui voluptates necessitatibus earum sint
           perspiciatis error.
-        </li>
-      </ul>
+        </p>
+      </div>
       <nav>
-        <div>
-          <ul class="sitemap">
-            <li class="bold_text">Sitemap</li>
-            <li><a href="#">Homepage</a></li>
-          </ul>
-          <ul class="resources">
-            <li class="bold_text">Resources</li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-              <a href="#">faq</a>
-            </li>
-          </ul>
+        <div class="sitemap footer_info">
+          <p class="bold_text">Sitemap</p>
+          <a href="#">Homepage</a>
         </div>
-        <div>
-          <ul class="company">
-            <li class="bold_text">Company</li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <ul class="opportunities">
-            <li class="bold_text">Opportunities</li>
-            <li><a href="#">Jobs</a></li>
-          </ul>
+        <div class="resources footer_info">
+          <p class="bold_text">Resources</p>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+          <a href="#">faq</a>
+        </div>
+        <div class="company footer_info">
+          <p class="bold_text">Company</p>
+          <a href="#">About</a>
+          <a href="#">Customers</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="opportunities footer_info">
+          <p class="bold_text">Opportunities</p>
+          <a href="#">Jobs</a>
         </div>
       </nav>
     </footer>
